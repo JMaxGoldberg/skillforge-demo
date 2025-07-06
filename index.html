@@ -5,4 +5,167 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SkillForge Platform Demos</title>
     <style>
-        /* [The CSS from the landing page artifact] */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        
+        .header {
+            color: white;
+            margin-bottom: 50px;
+        }
+        
+        .logo {
+            font-size: 48px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        
+        .tagline {
+            font-size: 24px;
+            margin-bottom: 15px;
+            opacity: 0.9;
+        }
+        
+        .subtitle {
+            font-size: 18px;
+            opacity: 0.8;
+        }
+        
+        .demo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .demo-card {
+            background: white;
+            border-radius: 20px;
+            padding: 40px 30px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        .demo-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 25px 50px rgba(0,0,0,0.3);
+        }
+        
+        .demo-icon {
+            font-size: 64px;
+            margin-bottom: 25px;
+        }
+        
+        .demo-title {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #2c3e50;
+        }
+        
+        .demo-description {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+        
+        .demo-button {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 25px;
+            font-weight: 500;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+        
+        .demo-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+        }
+        
+        .footer {
+            margin-top: 60px;
+            color: white;
+            opacity: 0.8;
+        }
+        
+        .footer a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">SkillForge</div>
+            <div class="tagline">Join the Movement. Reclaim Your Human Edge.</div>
+            <div class="subtitle">Interactive Platform Demonstrations</div>
+        </div>
+        
+        <div class="demo-grid">
+            <a href="b2c-experience.html" class="demo-card">
+                <div class="demo-icon">🚀</div>
+                <div class="demo-title">Personal Development</div>
+                <div class="demo-description">
+                    Experience how individuals develop workplace skills through personalized AI coaching, community support, and real-world scenario practice.
+                </div>
+                <div class="demo-button">Try B2C Experience</div>
+            </a>
+            
+            <a href="healthcare-training.html" class="demo-card">
+                <div class="demo-icon">🏥</div>
+                <div class="demo-title">Healthcare Training</div>
+                <div class="demo-description">
+                    See how healthcare professionals master patient communication, crisis de-escalation, and therapeutic presence through video analysis and AI feedback.
+                </div>
+                <div class="demo-button">View Healthcare Demo</div>
+            </a>
+            
+            <a href="employer-dashboard.html" class="demo-card">
+                <div class="demo-icon">📊</div>
+                <div class="demo-title">Employer Intelligence</div>
+                <div class="demo-description">
+                    Explore how employers use SkillForge for skills-based hiring, team development, and measuring ROI on human skills training investments.
+                </div>
+                <div class="demo-button">See Employer View</div>
+            </a>
+        </div>
+        
+        <div class="footer">
+            <p>Building the Human Skills Renaissance • One Conversation at a Time</p>
+            <p style="margin-top: 15px;">
+                Contact: <a href="mailto:goldbergjillian@gmail.com">goldbergjillian@gmail.com</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
